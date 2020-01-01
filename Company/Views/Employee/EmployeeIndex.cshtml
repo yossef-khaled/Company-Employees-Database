@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Company.Models.Employee>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Bootstrap/bootstrap.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>EmployeeIndex</title>
+</head>
+<body>
+    <div>
+        <a href="Create" class="btn btn-primary">Create One</a>
+    </div>
+    <br />
+    <br />
+    <div>
+        <table class="table table-bordered table-horver table-striped">
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Employee Age</th>
+                <th>Employee Salary</th>
+                <th>Department Name</th>
+                <th>Options</th>
+            @foreach(var Item in Model)
+            {
+                <tr>
+                    <td>@Item.EmployeeID</td>
+                    <td>@Item.EmployeeName</td>
+                    <td>@Item.EmployeeAge</td>
+                    <td>@Item.EmployeeSalary</td>
+                    <td>@Item.Department.DepartmentName</td>
+                    <td>
+                        <a href="/Employee/Edit/@Item.EmployeeID" class="btn btn-success">Edit</a> |
+                        <a href="/Employee/Delete/@Item.EmployeeID" class="btn btn-danger" onclick="return confirm('Are You Sure You Wanna Delete This Item ?')">Delete</a>
+                    </td>
+                </tr>
+
+            }
+        </table>
+    </div>
+</body>
+</html>

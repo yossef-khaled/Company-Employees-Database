@@ -1,0 +1,43 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/BootStrap/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    <h2>Please,Enter Your Information Below :</h2>
+</head>
+<body>
+    <div>
+        <br />
+        <br />
+        @*You Can't Create Right Now !*@
+        <form method="post" action="/Employee/Create">
+            <div>
+                <label for="EmployeeName">Employee Name:</label>
+                <input type="text" class="form-control" name="EmployeeName" />
+            </div>
+
+            <div>
+                <label for="EmployeeAge">Employee Age:</label>
+                <input type="text" class="form-control" name="EmployeeAge" />
+            </div>
+
+            <div>
+                <label for="EmployeeSalary">Employee Salary:</label>
+                <input type="text" class="form-control" name="EmployeeSalary" />
+            </div>
+
+            <div>
+                <label for="DepartmentID">Department ID:</label>
+                <input type="text" class="form-control" name="DepartmentID" />
+            </div>
+            <br />
+            <br />
+            <input type="submit" value="Create" />
+        </form>
+    </div>
+</body>
+</html>
