@@ -7,8 +7,7 @@ It was built so that it consists of three main parts :
 for the 'Department', and a controller for each to handle any action taken from the user.
 - A good looking web with a front end created using HTML and bootstrap toolkit. Here is the where the user can take 
 any CRUD (Create, Read, Update, and Delete) action. 
-- SQL server as a backend containing he data of the employees, the departments, and the relationship between them. The models controllers
-can get access to the data in the help of the migrations.
+- SQL server as the database managment, containing the data of the employees, the departments, and the relationship between them. The models controllers can get access to the data in the help of the migrations.
 
 ## Tasks to be done
 - [x] Create employee and department models.
