@@ -2,7 +2,6 @@
 A .NET web includes a databse of the information of the employees working for a company with multiple departments.
 
 ## How it was done
-It was built so that it consists of three main parts :
 - Using the designed pattern MVC with the programming language C# , I created a model for the 'Employee' and another one
 for the 'Department', and a controller for each to handle any action taken from the user.
 - A good looking web with a front end created using HTML and bootstrap toolkit. Here is the where the user can take 
